@@ -1,0 +1,15 @@
+# Ignore base files
+**/.dockerignore
+**/.DS_Store
+**/.editorconfig
+**/.git*
+**/.vscode
+**/LICENSE
+**/node_modules
+**/README.md
+
+# Ignore standard documentation files
+**/docs
+
+# Ignore all hidden files
+.*
