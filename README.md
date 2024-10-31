@@ -79,6 +79,25 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Features
+
+This section should list the features that have been implemented and those that are planned for the future. Use the following format:
+
+- [x] Feature 1
+- [ ] Feature 2
+- [ ] Feature 3
+  - [ ] Sub-feature 3.1
+  - [x] Sub-feature 3.2
+  - [ ] Sub-feature 3.3
+- [ ] Feature 4
+  - [ ] Sub-feature 4.1
+    - [ ] Sub-sub-feature 4.1.1
+
+**Legend:**
+
+- [x] - Completed
+- [ ] - In Progress
+
 <!-- GETTING STARTED -->
 ## Getting Started
 
