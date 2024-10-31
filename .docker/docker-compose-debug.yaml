@@ -1,7 +1,8 @@
 services:
   # Application
   app:
-    image: app:1.2.3
+    build:
+      context: ./.docker/App/
     ports:
     - "5000:5000"
     environment:

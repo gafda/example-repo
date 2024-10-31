@@ -1,5 +1,5 @@
 # Use the official Nginx image from the Docker Hub
-FROM nginx:alpine
+FROM nginx:alpine3.20-slim
 
 # Create a non-root user and group
 RUN addgroup -S nginxgroup && adduser -S nginxuser -G nginxgroup
