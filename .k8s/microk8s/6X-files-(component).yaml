@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: <component>-files
+  namespace: <solution>
+data:
+  file.ext: "..."

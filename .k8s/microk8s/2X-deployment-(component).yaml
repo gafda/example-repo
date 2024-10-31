@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: <component>
+  namespace: <solution>
+  annotations:
+    reloader.stakater.com/auto: "true"
+spec:
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: <component>
+  template:
+    metadata:
+      labels:
+        app: <component>
+    spec:
+      containers:
+      - name: <component>
+        image: <component image>:<tag>
+        imagePullPolicy: IfNotPresent
+        resources:
+          limits:
+            memory: 8Mi
+          requests:
+            cpu: 5m
+            memory: 4Mi
+        envFrom:
+        - configMapRef:
+            name: <component>-env
+        env:
+        - name: _KEY
+          valueFrom:
+            secretKeyRef:
+              name: <component>-secrets
+              key: _KEY
+        ports:
+          - containerPort: <app port(s)>
+        volumeMounts:
+        - name: <component>-volume
+          mountPath: <data-path>
+      volumes:
+      - name: <component>-volume
+        persistentVolumeClaim:
+          claimName: <component>-pvc

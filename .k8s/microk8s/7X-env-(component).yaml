@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: <component>-env
+  namespace: <solution>
+data:
+  ENV_VAR1: "abc"
+  ENV_VAR2: "true"

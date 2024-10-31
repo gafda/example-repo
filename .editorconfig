@@ -12,21 +12,26 @@ insert_final_newline = true
 [Makefile]
 indent_style = tab
 
-# Yaml files
-[*.{yml,yaml}]
+# Yaml,Yml files
+[*.{yaml,yml}]
+charset = utf-8
 indent_size = 2
+tab_width = 2
 
 # Xml files
 [*.xml]
 indent_size = 2
 
-# JSON files
-[*.json]
+# Js,Json files
+[*.{js,json}]
+charset = utf-8
 indent_size = 2
+tab_width = 2
 
-# JavaScript files
-[*.js]
-indent_size = 2
+# Script files
+[*.{sh,bat}]
+end_of_line = lf
+insert_final_newline = true
 
 # C# files
 [*.cs]

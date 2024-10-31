@@ -1,0 +1,9 @@
+{
+  "extensions": {
+    "recommendations": [
+      "editorconfig.editorconfig",
+      "mhutchie.git-graph",
+      "shardulm94.trailing-spaces"
+    ]
+  }
+}

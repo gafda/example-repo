@@ -1,0 +1,46 @@
+#! more info here: https://github.com/actions/labeler
+batches:
+- changed-files:
+  - any-glob-to-any-file:
+    - "**/*.sh"
+
+configs:
+- changed-files:
+  - any-glob-to-any-file:
+    - "**/*-configs/**/*"
+
+docker:
+- changed-files:
+  - any-glob-to-any-file:
+    - .docker/**/*
+
+documentation:
+- changed-files:
+  - any-glob-to-any-file:
+    - "**/*.md"
+
+envVars:
+- changed-files:
+  - any-glob-to-any-file:
+    - "**/envs/**/*"
+
+additional_files:
+- changed-files:
+  - any-glob-to-any-file:
+    - "**/*-files/**/*"
+
+gh/workflows:
+- changed-files:
+  - any-glob-to-any-file:
+    - ".github/**/*"
+    - CODEOWNERS
+
+k8s:
+- changed-files:
+  - any-glob-to-any-file:
+    - .k8s/**/*
+
+scripts:
+- changed-files:
+  - any-glob-to-any-file:
+    - "scripts/**/*"
