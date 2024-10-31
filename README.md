@@ -114,7 +114,7 @@ Hardware:
 * ...
 
 Software:
-* DotNet Core 6.0
+* DotNet Core 8.0
 * DirectX v12.1
 * TensorFlow 2.0
 * ...
