@@ -20,7 +20,7 @@ jobs:
       - name: Assign author to PR
         uses: technote-space/assign-author@9558557c5c4816f38bd06176fbc324ba14bb3160 # v1.6.2
         with:
-          GITHUB_TOKEN: "${{ secrets.R2D2_COMMITTER }}"
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
   pr-labels:
     name: Assign labels to PR 🔖
@@ -32,5 +32,5 @@ jobs:
     steps:
       - uses: actions/labeler@b8dd2d9be0f68b860e7dae5dae7d772984eacd6d # v6.2.0
         with:
-          repo-token: "${{ secrets.R2D2_COMMITTER }}"
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
           configuration-path: ".github/pr-labeler.yml"
